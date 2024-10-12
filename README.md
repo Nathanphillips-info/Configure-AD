@@ -24,6 +24,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 2: Install AD users and computers and promote the server to the domain controller, adding a new forest and giving it a domain name. 
 - Step 3: In Active Directory, create new OUs and users and add them to specific security groups.
 - Step 4: Join client 1 (the Windows 10 VM) to the domain and give domain users RDP access.
+- Step 5: Practice resetting passwords and locking/unlocking accounts.
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -41,7 +42,7 @@ first, create a resource group and a virtual network in the Azure portal. Then, 
 
 </p>
 <p>
-After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain.
+After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD
 </p>
 <br />
 
@@ -50,6 +51,6 @@ After I logged into the client VM and added it to the domain. This can be done i
 
 </p>
 <p>
-Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD. This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. Now, a company can run with less fear that its information is exposed to those inside it who don't need it. And that certain employees can access the information they need. 
+. This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory is useful in keeping a local network secure, authenticating users, and sharing resources across a network, which are essential in a business environment. 
 </p>
 <br />
