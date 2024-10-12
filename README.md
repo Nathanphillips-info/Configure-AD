@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+first, create a resource group and a virtual network in the Azure portal. Then, create two virtual machines, one Windows 22 server, and another Windows 10 pro. Make sure they are on the same virtual network. Set the IP address of the server to static. Then set the DNS of the client PC (the Windows 10 VM) to the server's IP address. Once complete, RDP into the server and install AD users and computers. Promote the server to the domain controller and set up a new forest, giving it a domain name. From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
 </p>
 <br />
 
@@ -40,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain.
 </p>
 <br />
 
