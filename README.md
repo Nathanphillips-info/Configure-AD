@@ -37,7 +37,8 @@ first, create a resource group and a virtual network in the Azure portal. Then, 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/29ac9d24-5878-4ec1-83e4-87bdbd5c3de2"/>
+"/>
 </p>
 <p>
 After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain.
