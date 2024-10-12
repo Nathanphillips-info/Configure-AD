@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This tutorial showcases my knowledge of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -42,7 +42,7 @@ first, create a resource group and a virtual network in the Azure portal. Then, 
 
 </p>
 <p>
-After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD
+After I logged into the client VM and added it to the domain, this can be done in renaming this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then, I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD.
 </p>
 <br />
 
