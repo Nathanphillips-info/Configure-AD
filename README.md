@@ -51,6 +51,6 @@ After I logged into the client VM and added it to the domain. This can be done i
 
 </p>
 <p>
-. This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory is useful in keeping a local network secure, authenticating users, and sharing resources across a network, which are essential in a business environment. 
+This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory is useful in keeping a local network secure, authenticating users, and sharing resources across a network, which are essential in a business environment. 
 </p>
 <br />
