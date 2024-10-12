@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-first, create a resource group and a virtual network in the Azure portal. Then, create two virtual machines, one Windows 22 server, and another Windows 10 pro. Make sure they are on the same virtual network. Set the IP address of the server to static. Then set the DNS of the client PC (the Windows 10 VM) to the server's IP address. Once complete, RDP into the server and install AD users and computers. Promote the server to the domain controller and set up a new forest, giving it a domain name. From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
+first, create a resource group and a virtual network in the Azure portal. Then, create two virtual machines, one Windows 22 server, and another Windows 10 pro. Make sure they are on the same virtual network. Set the IP address of the server to static. Then set the DNS of the client PC (the Windows 10 VM) to the server's IP address. Once complete, Remote into the server and install AD users and computers. Promote the server to the domain controller and set up a new forest, giving it a domain name. From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
 </p>
 <br />
 
@@ -47,9 +47,9 @@ After I logged into the client VM and added it to the domain. This can be done i
 
 <p>
 <img src="https://github.com/user-attachments/assets/7e97173c-0c63-4b5b-b68c-dc7b9ad0baa8"/>
-/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD. 
 </p>
 <br />
