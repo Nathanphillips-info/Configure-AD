@@ -20,10 +20,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Create a Windows server VM and another Windows 10 VM; set the Server's IP to a static address and join them on the same virtual network.
+- Step 2: Install AD users and computers and promote the server to the domain controller, adding a new forest and giving it a domain name. 
+- Step 3: In Active Directory, create new OUs and users and add them to specific security groups.
+- Step 4: Join client 1 (the Windows 10 VM) to the domain and give domain users RDP access.
 
 <h2>Deployment and Configuration Steps</h2>
 
