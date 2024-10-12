@@ -38,7 +38,7 @@ first, create a resource group and a virtual network in the Azure portal. Then, 
 
 <p>
 <img src="https://github.com/user-attachments/assets/29ac9d24-5878-4ec1-83e4-87bdbd5c3de2"/>
-"/>
+
 </p>
 <p>
 After I logged into the client VM and added it to the domain. This can be done in rename this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can go and check in AD on the server to see if the Client has been added to the domain.
@@ -50,6 +50,6 @@ After I logged into the client VM and added it to the domain. This can be done i
 
 </p>
 <p>
-Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD. 
+Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD. This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. Now, a company can run with less fear that its information is exposed to those inside it who don't need it. And that certain employees can access the information they need. 
 </p>
 <br />
