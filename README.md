@@ -33,7 +33,7 @@ This tutorial showcases my knowledge of on-premises Active Directory within Azur
 
 </p>
 <p>
-first, create a resource group and a virtual network in the Azure portal. Then, create two virtual machines, one Windows 22 server, and another Windows 10 pro. Make sure they are on the same virtual network. Set the IP address of the server to static. Then set the DNS of the client PC (the Windows 10 VM) to the server's IP address. Once complete, Remote into the server and install AD users and computers. Promote the server to the domain controller and set up a new forest, giving it a domain name. From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
+First, a resource group and a virtual network should be created in the Azure portal. Then, create two virtual machines, one Windows 22 server, and another Windows 10 pro. Make sure they are on the same virtual network. Set the IP address of the server to a static address. Then set the DNS of the client PC (the Windows 10 VM) to the server's IP address. Once complete, Remote into the server and install AD users and computers. Promote the server to the domain controller and set up a new forest, giving it a domain name. From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
 </p>
 <br />
 
@@ -42,7 +42,7 @@ first, create a resource group and a virtual network in the Azure portal. Then, 
 
 </p>
 <p>
-After I logged into the client VM and added it to the domain, this can be done in renaming this pc advanced. Once completed, I gave domain users remote access to the desktop on the client's PC. Then, you can check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then, I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD.
+Then, log into the client VM and add it to the domain, this can be done in system then rename this pc advanced. Once completed, give domain users remote access to the desktop on the client's PC. Then, you can check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users and used one of them to log in to the client computer remotely. Then, I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD.
 </p>
 <br />
 
@@ -51,6 +51,6 @@ After I logged into the client VM and added it to the domain, this can be done i
 
 </p>
 <p>
-This project showcases my knowledge of how to use Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory is useful in keeping a local network secure, authenticating users, and sharing resources across a network, which are essential in a business environment. 
+This project showcases my knowledge of Active Directory. Utilizing Active Directory would be useful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory is useful in keeping a local network secure, authenticating users, and sharing resources across a network, which are essential in a business environment. 
 </p>
 <br />
