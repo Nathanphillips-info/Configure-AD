@@ -33,11 +33,13 @@ This tutorial showcases my knowledge of on-premises Active Directory within Azur
 
 </p>
 <p>
-First, a resource group and a virtual network should be created in the Azure portal. Then, create two virtual machines, one Windows 22 server and another Windows 10 pro. Make sure they are on the same virtual network. Set the server's IP address to a static address. 
+- First, a resource group and a virtual network should be created in the Azure portal. Then, create two virtual machines, one Windows 22 server and another Windows 10 pro. Make sure they are on the same virtual network. Set the server's IP address to a static address. 
 <p>
 - Then, the DNS of the client PC (the Windows 10 VM) is set to the server's IP address. Once complete, Remote desktop into the server and install AD users and computers.
 </p>
+<p>
 - Promote the server to the domain controller and set up a new forest, giving it a domain name. 
+</p>
 <p>
 - From there, you can create new organizational units and users. I gave some users special rights by adding them to the Administrator's security group. Other accounts I added to the domain users group.
 </p>
@@ -49,7 +51,7 @@ First, a resource group and a virtual network should be created in the Azure por
 
 </p>
 <p>
-Then, log into the client VM and add it to the domain; this can be done in system -> rename this PC -> advanced. Once completed, give domain users remote access to the desktop on the client's PC. 
+- Log into the client VM and add it to the domain; this can be done in system -> rename this PC -> advanced. Once completed, give domain users remote access to the desktop on the client's PC. 
 <p>
 - Then, you can check in AD on the server to see if the Client has been added to the domain. Next, in the domain controller, I ran a script on PowerShell ISE that added 1000 random new users. 
 <p>
@@ -65,6 +67,9 @@ Then, log into the client VM and add it to the domain; this can be done in syste
 
 </p>
 <p>
-This project showcases my knowledge of Active Directory. Utilizing Active Directory would be helpful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory helps keep a local network secure by authenticating users and sharing resources across a network, which are essential in a business environment. 
+- This project showcases my knowledge of Active Directory. Utilizing Active Directory would be helpful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. 
+</p>
+<p>
+- It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory helps keep a local network secure by authenticating users and sharing resources across a network, which is essential in a business environment. 
 </p>
 <br />
