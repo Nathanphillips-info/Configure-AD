@@ -63,8 +63,11 @@ This tutorial showcases my knowledge of on-premises Active Directory within Azur
 <p>
 - Then, in the group policy management editor, navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy. And edit the rules to apply them to users on the domain. I set it to five failed logins, which locks out the account for thirty minutes. 
 </p>
+<p> 
+- To link a GPO to an organizational unit right-click on the OU or domain in GPMC and select "Link an Existing GPO." Select the group policy you edited earlier and click "okay." 
+</p> 
 <p>
-- Then, I practiced locking and unlocking a random user. I also changed the user's password. 
+- Then, I practiced locking and unlocking a random user. You can also change the user's password. 
 </p>
 <br />
 
@@ -73,9 +76,12 @@ This tutorial showcases my knowledge of on-premises Active Directory within Azur
 
 </p>
 <p>
-- This project showcases my knowledge of Active Directory. Utilizing Active Directory would be helpful for any business running a Windows infrastructure that wants to give access to its employees but keeps some information, such as files in specific directories or computers, separate. 
+- Next, I added folders and gave permissions to certain OUs so that they could or could not access the folders. And I used a random user on the client computer to test if it worked. 
 </p>
 <p>
-- It also shows my knowledge of Azure and setting up virtual machines and networks in the cloud. Active Directory helps keep a local network secure by authenticating users and sharing resources across a network, which is essential in a business environment. 
+- Create three folders in the domain controller in C: you can name them. I created a "read access," a "write access," and a "no access" folder. Then I right-clicked and went to properties, then added domain users, giving them access to either read, write, or not, based on the folder. 
+</p>
+<p>
+- I also created an "accountants" OU and an "accountants" folder in C: and gave them read and write access to the folder. Then, I added a user to the "accountants" OU and tested the access.  
 </p>
 <br />
