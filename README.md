@@ -58,7 +58,13 @@ This tutorial showcases my knowledge of on-premises Active Directory within Azur
 - Log in to the client computer remotely using one of the accounts created. 
 </p>
 <p>
-- Then, I set rules for password lockouts and locked and unlocked a random account created by the script to practice changing passwords in AD.
+- Then, I set rules for password lockouts by configuring group policy. To do this, in the domain controller, you can search "gpmc.msc," and then it should take you to group policy management. You can right-click on group policy objects to create a new GPO. 
+</p>
+<p>
+- Then, in the group policy management editor, navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy. And edit the rules to apply them to users on the domain. I set it to five failed logins, which locks out the account for thirty minutes. 
+</p>
+<p>
+- Then, I practiced locking and unlocking a random user. I also changed the user's password. 
 </p>
 <br />
 
